@@ -1,8 +1,8 @@
-# How to display "No Records Available" label when there are no records in the DataSource of WinForms DataGrid (SfDataGrid)?
+# How to display "No Records Available" label when there are no records in the DataSource of WinForms DataGrid?
 
 ## About the sample
 
-This example illustrates how to display "No Records Available" label when there are no records in the DataSource of WinForms DataGrid (SfDataGrid).
+This example illustrates how to display "No Records Available" label when there are no records in the DataSource of WinForms DataGrid.
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) doesn’t have direct support to show any label when no records are available in the underlying data source. However, you can manually add a label to the SfDataGrid.TableControl and handle its visibility based on the number of records. This needs to be checked on initial loading and in the events that occurs while changing the DataSource and while deleting the existing row.
 
@@ -47,7 +47,6 @@ private void OnSfDataGrid_DataSourceChanged(object sender, Syncfusion.WinForms.D
 {
     SetNoRecordsLabelVisibility();
 }
-
 
 private void SetNoRecordsLabelVisibility()
 {
